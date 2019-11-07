@@ -1,4 +1,34 @@
-.main {
-    width: 900px;
-    
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+@font-face {
+  font-family: "Ubuntu light";
+  src: url("font-face/3972.ttf");
+  font-family: "PlayfairDisplay";
+  src: url("font-face/PlayfairDisplay-Regular.otf");
+}
+.page-wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+.nav-menu {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+.nav-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: PlayfairDisplay;
+  color: #626262;
+  font-size: 14px;
+}
+.nav-menu li {
+  display: inline;
+}
+.blog-item {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
 }
