@@ -1,34 +1,81 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-} */
+}
 @font-face {
   font-family: "Ubuntu light";
   src: url("font-face/3972.ttf");
   font-family: "PlayfairDisplay";
   src: url("font-face/PlayfairDisplay-Regular.otf");
 }
-.page-wrapper {
+.wrapper {
   width: 900px;
   margin: 0 auto;
 }
 .nav-menu {
   list-style: none;
-  padding-left: 0px;
-  margin-left: 0px;
+  margin: 80px 0px 0px 0px;
+  text-align: center;
 }
+
 .nav-menu a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: PlayfairDisplay;
-  color: #626262;
+  color: #626262; /* Цвет обычной ссылки */
   font-size: 14px;
+}
+.nav-menu a:hover {
+  color: #03a9f4; /* Цвет ссылки при наведении на нее курсора мыши */
 }
 .nav-menu li {
   display: inline;
+  padding: 0px 50px;
+}
+.nav-menu li:not(:first-child) {
+  margin-left: -0.36em;
 }
 .blog-item {
   float: left;
   box-sizing: border-box;
   width: 50%;
+  padding: 0px 30px;
+  margin: 100px 0px 30px 0px;
+}
+.blog-title {
+  font-family: PlayfairDisplay;
+  font-size: 30px;
+  color: #626262;
+  font-weight: normal;
+  margin: 30px 0px 0px 0px;
+}
+.blog-category {
+  font-family: Ubuntu light;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #b4ad9e;
+  margin: 30px 0px 0px 0px;
+}
+.blog-text {
+  font-family: PlayfairDisplay;
+  font-size: 14px;
+  color: #626262;
+  line-height: 24px;
+}
+.main-section {
+  margin: 0px -30px;
+}
+.button {
+  font-family: PlayfairDisplay;
+  font-size: 20px;
+  color: #626262;
+  border: 1px solid #626262;
+  background: #ffffff;
+  padding: 20px 30px 20px 30px;
+  outline: none;
+  margin: 25px auto 75px auto;
+  display: block;
+}
+.clear {
+    clear: both;
 }
