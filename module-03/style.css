@@ -16,6 +16,7 @@
   list-style: none;
   margin: 80px 0px 0px 0px;
   text-align: center;
+  font-size: 0px;
 }
 
 .nav-menu a {
@@ -23,7 +24,6 @@
   text-transform: uppercase;
   font-family: PlayfairDisplay;
   color: #626262; /* Цвет обычной ссылки */
-  font-size: 14px;
 }
 .nav-menu a:hover {
   color: #03a9f4; /* Цвет ссылки при наведении на нее курсора мыши */
@@ -31,9 +31,7 @@
 .nav-menu li {
   display: inline;
   padding: 0px 50px;
-}
-.nav-menu li:not(:first-child) {
-  margin-left: -0.36em;
+  font-size: 14px;
 }
 .blog-item {
   float: left;
