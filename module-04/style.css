@@ -215,7 +215,7 @@ a:focus .cost {
   margin-bottom: 80px;
   border-radius: 3px;
   border: none;
-  cursor: pointer
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
