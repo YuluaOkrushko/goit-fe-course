@@ -214,6 +214,8 @@ a:focus .cost {
   padding: 15px 40px;
   margin-bottom: 80px;
   border-radius: 3px;
+  border: none;
+  cursor: pointer
 }
 .button:hover,
 .button:focus {
