@@ -50,7 +50,7 @@
 }
 
 .logo {
-  font-family: RobotoLight;
+  font-family: Roboto Light;
   font-size: 30px;
   vertical-align: middle;
   display: inline-block;
@@ -63,7 +63,7 @@
   outline: none;
 }
 .logo a::first-letter {
-  font-family: RobotoBlack;
+  font-family: Roboto;
   color: #1abc9c;
   font-weight: 900;
 }
@@ -75,7 +75,7 @@
 }
 .nav-menu a {
   vertical-align: middle;
-  font-family: OpenSans-Bold;
+  font-family: 'Open Sans';
   font-weight: 700;
   text-decoration: none;
   font-size: 14px;
@@ -96,7 +96,7 @@
 }
 /* SECTION TITLE */
 .title {
-  font-family: RobotoBlack;
+  font-family: Roboto;
   color: #515151;
   font-weight: 900;
   font-size: 48px;
@@ -121,8 +121,14 @@
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.content a {
+  outline: none;
+}
 .content:nth-child(4n) {
   margin-right: 0;
+}
+.content:nth-last-child(-n + 4) {
+  margin-bottom: 102px;
 }
 .feature {
   display: block;
@@ -132,7 +138,7 @@
   object-fit: cover;
 }
 .items {
-  font-family: RobotoBlack;
+  font-family: Roboto;
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
@@ -142,7 +148,6 @@
   width: 80%;
   height: 40px;
   text-decoration: none;
-  outline: none;
   background-color: #323232;
   padding: 10px 0 10px 10px;
 }
@@ -151,12 +156,11 @@ a:focus .items {
   background-color: #1abc9c;
 }
 .cost {
-  font-family: RobotoBlack;
+  font-family: Roboto;
   font-weight: 900;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  outline: none;
   color: #ffffff;
   background-color: #8c8c8c;
   float: right;
@@ -168,4 +172,50 @@ a:focus .items {
 a:hover .cost,
 a:focus .cost {
   background-color: #7fd9c7;
+}
+/* BLOG */
+.blog {
+  display: block;
+  width: 350px;
+  height: 262px;
+  float: left;
+  margin-right: 30px;
+}
+.blog:nth-child(3n) {
+  margin-right: 0;
+}
+.blog-item {
+  font-family: "Open Sans Semibold";
+  font-size: 18px;
+  color: #555252;
+  margin-bottom: 24px;
+}
+.blog-item::after {
+  content: "";
+  height: 3px;
+  width: 136px;
+  background-color: #1abc9c;
+  display: block;
+  margin-top: 14px;
+}
+.excerpt {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #555252;
+  margin-bottom: 12px;
+}
+.button {
+  font-family: "Open Sans Light";
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4ec6ab;
+  outline: none;
+  display: block;
+  padding: 15px 40px;
+  margin-bottom: 80px;
+  border-radius: 3px;
+}
+.button:hover,
+.button:focus {
+background-color: #1abc9c;
 }
