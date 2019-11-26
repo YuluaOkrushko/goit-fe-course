@@ -8,7 +8,7 @@
   font-family: "OpenSans-Bold";
   src: url("font-face/OpenSans-Bold.ttf");
   font-family: "RobotoBlack";
-  src: url("font-face/RobotoBlack.ttf");
+  src: url("font-face/Roboto-Black.ttf");
   font-family: "RobotoLight";
   src: url("font-face/RobotoLight.ttf");
 }
@@ -27,7 +27,7 @@
   text-align: justify;
   width: 100%;
   margin-top: 42px;
-  /* margin-bottom: 102px; */
+  margin-bottom: 60px;
 }
 .head::before {
   content: "";
@@ -94,6 +94,7 @@
 .nav-menu li:last-child {
   margin-right: 0;
 }
+/* SECTION TITLE */
 .title {
   font-family: RobotoBlack;
   color: #515151;
@@ -101,6 +102,7 @@
   font-size: 48px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 92px;
 }
 .title::after {
   content: "";
@@ -111,4 +113,59 @@
   margin: 0 auto;
   margin-top: 22px;
 }
-
+/* GALLERY */
+.content {
+  width: 255px;
+  height: 325px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.content:nth-child(4n) {
+  margin-right: 0;
+}
+.feature {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+.items {
+  font-family: RobotoBlack;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  text-decoration: none;
+  outline: none;
+  background-color: #323232;
+  padding: 10px 0 10px 10px;
+}
+a:hover .items,
+a:focus .items {
+  background-color: #1abc9c;
+}
+.cost {
+  font-family: RobotoBlack;
+  font-weight: 900;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #8c8c8c;
+  float: right;
+  width: 20%;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+a:hover .cost,
+a:focus .cost {
+  background-color: #7fd9c7;
+}
