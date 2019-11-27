@@ -116,11 +116,6 @@
 .featured-section {
   padding-bottom: 94px;
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 .content {
   width: 255px;
   height: 325px;
@@ -232,4 +227,9 @@ a:focus .cost {
 .button:hover,
 .button:focus {
   background-color: #1abc9c;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
