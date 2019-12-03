@@ -11,6 +11,8 @@
   src: url("font-face/Roboto-Black.ttf");
   font-family: "RobotoLight";
   src: url("font-face/RobotoLight.ttf");
+  font-family: "Pe-icon-7-stroke";
+  src: url("font-face/Pe-icon-7-stroke.ttf");
 }
 * {
   margin: 0;
@@ -126,16 +128,18 @@
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 .content a {
   outline: none;
+  display: block;
 }
 .feature {
   display: block;
   margin: 0;
   width: 100%;
-  height: 322px;
-  object-fit: cover;
+  height: 282px;
+  object-fit: contain;
 }
 .items {
   font-family: Roboto;
@@ -172,4 +176,57 @@ a:focus .items {
 a:hover .cost,
 a:focus .cost {
   background-color: #7fd9c7;
+}
+
+.item-control {
+  background-color: #8c8c8c;
+  opacity: 0.5;
+  width: 235px;
+  height: 261px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.control-wrapper {
+  margin: 0 auto;
+  width: 164px;
+}
+
+.action:last-child {
+  margin-right: 0;
+}
+
+.action {
+  border: 1px solid #ffffff;
+  color: #ffff;
+  width: 48px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 48px;
+  height: 48px;
+  float: left;
+  text-decoration: none;
+  margin-right: 10px;
+  box-sizing: border-box;
+  font-family: "Pe-icon-7-stroke";
+}
+
+.action.like:before {
+  content: "\e642";
+}
+.btn-add-to-cart {
+  width: 164px;
+  height: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
