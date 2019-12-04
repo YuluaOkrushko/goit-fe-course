@@ -119,8 +119,8 @@
 
 /* NEW COLLECTION */
 
-.featured-section {
-  padding-bottom: 94px;
+.featured-section{
+  padding-bottom: 100px;
 }
 .content {
   width: 255px;
@@ -129,6 +129,9 @@
   margin-right: 30px;
   margin-bottom: 30px;
   position: relative;
+}
+.content:last-child {
+  margin-right: 0;
 }
 .content a {
   outline: none;
@@ -179,8 +182,7 @@ a:focus .cost {
 }
 
 .item-control {
-  background-color: #8c8c8c;
-  opacity: 0.5;
+  background-color: rgba(115, 115, 115, 0.5);
   width: 235px;
   height: 261px;
   position: absolute;
@@ -191,11 +193,16 @@ a:focus .cost {
   box-sizing: border-box;
   padding-top: 80px;
   text-align: center;
+  /* display: none; */
 }
+/* .item-control:hover {
+  display: block;
+} */
 
 .control-wrapper {
   margin: 0 auto;
   width: 164px;
+  padding-bottom: 8px;
 }
 
 .action:last-child {
@@ -217,14 +224,68 @@ a:focus .cost {
   font-family: "Pe-icon-7-stroke";
 }
 
-.action.like:before {
+.action.like::before {
   content: "\e642";
 }
+.action.like:hover,
+.action.like:focus {
+  background-color: #1abc9c;
+}
+
+.action.shuffle::before {
+  content: "\e614";
+}
+.action.shuffle:hover,
+.action.shuffle:focus {
+  background-color: #1abc9c;
+}
+
+.action.clock::before {
+  content: "\e66b";
+}
+.action.clock:hover,
+.action.clock:focus {
+  background-color: #1abc9c;
+}
+
 .btn-add-to-cart {
   width: 164px;
   height: 50px;
+  font-family: "Open Sans";
+  color: #ffffff;
+  border: #ffffff solid 1px;
+  outline: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #323232;
+  padding: 10px 20px 10px 20px;
+}
+.btn-add-to-cart:before {
+  font-family: "Pe-icon-7-stroke";
+  font-size: 30px;
+  content: "\e66e ";
+  vertical-align: middle;
+}
+.btn-add-to-cart:hover,
+.btn-add-to-cart:focus {
+  background-color: #1abc9c;
 }
 
+/* FOOTER */
+.footer-wrapper{
+  height: 88px;
+  background-color: #323232;
+}
+.author {
+  text-align: center;
+  padding: 38px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #fefefe;
+}
+.author-color{
+  color: #1abc9c;
+}
 .clearfix::after {
   content: "";
   display: table;
