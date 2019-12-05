@@ -247,8 +247,8 @@
     padding: 10px 0 10px 10px;
 }
 
-a:hover .items,
-a:focus .items {
+.content:hover .items,
+.content:focus .items {
     background-color: #1abc9c;
 }
 
@@ -267,8 +267,8 @@ a:focus .items {
     box-sizing: border-box;
 }
 
-a:hover .cost,
-a:focus .cost {
+.content:hover .cost,
+.content:focus .cost {
     background-color: #7fd9c7;
 }
 
