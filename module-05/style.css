@@ -1,18 +1,36 @@
 @font-face {
-    font-family: "OpenSans-Light";
-    src: url("font-face/OpenSans-Light.ttf");
-    font-family: "OpenSans-Regular";
-    src: url("font-face/OpenSans-Regular.ttf");
-    font-family: "OpenSans-Semibold";
-    src: url("font-face/OpenSans-Semibold.ttf");
-    font-family: "OpenSans-Bold";
-    src: url("font-face/OpenSans-Bold.ttf");
-    font-family: "RobotoBlack";
-    src: url("font-face/Roboto-Black.ttf");
-    font-family: "RobotoLight";
-    src: url("font-face/RobotoLight.ttf");
     font-family: "Pe-icon-7-stroke";
     src: url("font-face/Pe-icon-7-stroke.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("font-face/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("font-face/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("font-face/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("font-face/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("font-face/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("font-face/RobotoLight.ttf");
 }
 
 * {
@@ -56,7 +74,7 @@
 }
 
 .logo {
-    font-family: Roboto Light;
+    font-family: RobotoLight;
     font-size: 30px;
     display: block;
     float: left;
@@ -71,7 +89,7 @@
 }
 
 .logo a::first-letter {
-    font-family: Roboto;
+    font-family: RobotoBlack;
     color: #1abc9c;
     font-weight: 900;
 }
@@ -111,7 +129,7 @@
 /* SECTION TITLE */
 
 .title {
-    font-family: Roboto;
+    font-family: RobotoBlack;
     color: #515151;
     font-weight: 900;
     font-size: 48px;
@@ -144,7 +162,7 @@
 
 .slider-title {
     position: absolute;
-    font-family: Roboto;
+    font-family: RobotoBlack;
     color: #ffffff;
     font-weight: 900;
     font-size: 60px;
@@ -192,7 +210,7 @@
 }
 
 .subtitle {
-    font-family: Roboto Light;
+    font-family: RobotoLight;
     font-size: 24px;
     position: absolute;
     top: 290px;
@@ -239,7 +257,7 @@
 }
 
 .items {
-    font-family: Roboto;
+    font-family: RobotoBlack;
     font-weight: 900;
     font-size: 18px;
     text-transform: uppercase;
@@ -259,7 +277,7 @@
 }
 
 .cost {
-    font-family: Roboto;
+    font-family: RobotoBlack;
     font-weight: 900;
     font-size: 18px;
     text-transform: uppercase;
