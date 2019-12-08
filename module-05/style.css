@@ -102,7 +102,7 @@
 }
 
 .nav-menu a {
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-weight: 700;
     text-decoration: none;
     font-size: 14px;
@@ -370,7 +370,7 @@
     width: 164px;
     height: 50px;
     line-height: 50px;
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     color: #ffffff;
     border: #ffffff solid 1px;
     cursor: pointer;
@@ -404,7 +404,7 @@
 .author {
     text-align: center;
     padding-top: 38px;
-    font-family: "Open Sans";
+    font-family: "OpenSans";
     font-size: 16px;
     color: #fefefe;
 }
