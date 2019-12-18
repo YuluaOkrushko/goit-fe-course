@@ -218,13 +218,17 @@ body {
     height: 470px;
     position: absolute;
     bottom: 0px;
-    display: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear 200ms;
 }
 
 .team-article:hover .menu-hover,
 .team-article:focus .menu-hover {
-    display: block;
-    transition: linear 200ms;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
 }
 
 .control-wrapper {
