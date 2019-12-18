@@ -170,21 +170,6 @@
         box-shadow: 10px 10px 0px 1px #95e1d3;
     }
     
-    .img-container {
-        position: relative;
-    }
-    
-    .img-container:after {
-        content: '';
-        position: absolute;
-        background: linear-gradient(#f38181, #fce38a);
-        opacity: 0;
-    }
-    
-    .img-container:hover:after {
-        opacity: 0.9;
-    }
-    
     .team-name {
         margin: 0;
         font-family: 'Montserrat';
