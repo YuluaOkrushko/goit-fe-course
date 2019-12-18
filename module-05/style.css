@@ -208,10 +208,12 @@
      outline: none;
      display: block;
  }
+ /* !!!!!!!!!!!!!! */
  
  .content:hover .item-control {
      display: block;
  }
+ /* !!!!!!!!!!!!!! */
  
  .feature {
      display: block;
