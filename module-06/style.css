@@ -170,6 +170,7 @@ body {
 
 .team {
     text-align: center;
+    padding-top: 24px;
 }
 
 .img-section {
@@ -213,16 +214,15 @@ body {
     width: 100%;
     height: 470px;
     position: absolute;
-    bottom: 14px;
-    right: 10px;
+    top: -10px;
+    left: -10px;
 }
 
 .menu-hover {
     width: 100%;
     height: 470px;
     position: absolute;
-    bottom: 0px;
-    display: block;
+    top: 0px;
     opacity: 0;
     visibility: hidden;
     transition: opacity linear 200ms;
@@ -316,6 +316,7 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #cccccc;
+    padding-left: 10px;
     border: 1px solid #e7e7e7;
 }
 
