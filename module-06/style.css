@@ -31,12 +31,12 @@ body {
     font-size: 30px;
     color: #95e1d3;
     outline: none;
+    transition: color linear 200ms;
 }
 
 .logo:hover,
 .logo:focus {
     color: #f38181;
-    transition: linear 200ms;
 }
 
 .nav-menu {
@@ -56,6 +56,9 @@ body {
     text-decoration: none;
     color: #95e1d3;
     outline: none;
+    transition: linear 200ms;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0px;
 }
 
 .menu-list:hover,
@@ -63,7 +66,6 @@ body {
     color: #f38181;
     border-bottom: 3px solid #f38181;
     padding-bottom: 6px;
-    transition: linear 200ms;
 }
 
 
@@ -178,6 +180,8 @@ body {
 .team-section-names {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 68px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .team-name {
@@ -221,11 +225,10 @@ body {
     display: block;
     opacity: 0;
     visibility: hidden;
-    transition: linear 200ms;
+    transition: opacity linear 200ms;
 }
 
-.team-article:hover .menu-hover,
-.team-article:focus .menu-hover {
+.team-article:hover .menu-hover {
     opacity: 1;
     visibility: visible;
     cursor: pointer;
@@ -247,12 +250,12 @@ body {
     padding: 14px;
     border-right: 1px solid #f9bd87;
     outline: none;
+    transition: background-color linear 200ms;
 }
 
 .socials:hover,
 .socials:focus {
     background-color: #95e1d3;
-    transition: linear 200ms;
 }
 
 .socials:last-child {
@@ -266,3 +269,56 @@ body {
 
 
 /* footer */
+
+.author {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.author-color {
+    color: #f38181;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 12px 0;
+    align-items: center;
+}
+
+.submit {
+    width: 150px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #95e1d3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color linear 200ms;
+}
+
+.submit:hover {
+    background-color: #f38181;
+}
+
+.email {
+    width: 230px;
+    height: 40px;
+    outline: none;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    border: 1px solid #e7e7e7;
+}
+
+.footer-form {
+    display: flex;
+}
