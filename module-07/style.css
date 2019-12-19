@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Serif Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: url('fonts/Droid\ Serif\ Italic\ V1.woff2') format('woff2'), url('fonts/Droid\ Serif\ Italic\ V1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Wisdom Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Wisdom\ Script\ AI.woff2') format('woff2'), url('fonts/Wisdom\ Script\ AI.woff') format('woff');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 98px;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 26px;
+    outline: none;
+    text-decoration: none;
+    color: #323232;
+    transition: color linear 200ms;
+}
+
+.logo:hover {
+    color: #fed136;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    min-width: 480px;
+    justify-content: space-between;
+}
+
+.menu-list {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #323232;
+    transition: color linear 200ms;
+}
+
+.menu-list:hover {
+    color: #fed136;
+}
+
+
+/* Services */
+
+.title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-title {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #323232;
+}
+
+.title-item {
+    margin: 0;
+    font-family: 'Droid Serif Italic';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+}
+
+.content-section {
+    display: flex;
+}
+
+.content {
+    width: 33%;
+    text-align: center;
+}
+
+.content-image {
+    width: auto;
+    border: 3px solid #fed136;
+    /* border-radius: 50%; */
+    padding: 14px;
+}
+
+.content-title {
+    margin: 0;
+}
+
+.content-text {
+    margin: 0;
+}
