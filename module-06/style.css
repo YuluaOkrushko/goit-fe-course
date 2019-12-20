@@ -78,10 +78,13 @@ body {
 }
 
 .title-item {
+    font-weight: 400;
     margin: 0;
     font-family: 'Kaushan Script';
     font-size: 24px;
     padding-bottom: 8px;
+    text-transform: none;
+    display: block;
 }
 
 .main-title {
@@ -116,9 +119,45 @@ body {
     display: flex;
     width: 33%;
     padding-bottom: 98px;
+    text-align: left;
+    position: relative;
 }
 
-.content:nth-last-child(-n + 4) {
+.content::before {
+    display: flex;
+    content: '';
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 92px;
+}
+
+.photography::before {
+    background-image: url("img/img1.png");
+}
+
+.web-design::before {
+    background-image: url('img/img2.png');
+}
+
+.creativity::before {
+    background-image: url('img/img3.png');
+}
+
+.seo::before {
+    background-image: url('img/img4.png');
+}
+
+.css-html::before {
+    background-image: url('img/img5.png');
+}
+
+.digital::before {
+    background-image: url('img/img6.png');
+}
+
+.content:nth-last-child(-n+4) {
     padding-bottom: 86px;
 }
 
@@ -129,8 +168,7 @@ body {
 }
 
 .content-title {
-    margin: 0;
-    padding-bottom: 12px;
+    margin: 0 0 12px 0;
     font-family: 'Montserrat';
     font-weight: 400;
     font-size: 14px;
@@ -243,6 +281,8 @@ body {
 }
 
 .socials {
+    background-position: center;
+    background-repeat: no-repeat;
     width: 56px;
     height: 56px;
     background-color: #fce38a;
@@ -265,6 +305,22 @@ body {
 .socials img {
     width: auto;
     height: 26px;
+}
+
+.facebook-icon {
+    background-image: url("img/facebook.png");
+}
+
+.twitter-icon {
+    background-image: url("img/twitter.png");
+}
+
+.pinterest-icon {
+    background-image: url("img/pinterest.png");
+}
+
+.instagram-icon {
+    background-image: url("img/instagram.png");
 }
 
 
