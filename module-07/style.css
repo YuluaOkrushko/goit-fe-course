@@ -13,10 +13,17 @@
 }
 
 @font-face {
-    font-family: 'Wisdom Script';
+    font-family: 'MontserratRegular';
     font-style: normal;
-    font-weight: 400;
-    src: url('fonts/Wisdom\ Script\ AI.woff2') format('woff2'), url('fonts/Wisdom\ Script\ AI.woff') format('woff');
+    font-weight: 700;
+    src: url('fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('fonts/montserrat-v14-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
 }
 
 *,
@@ -88,6 +95,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    padding-bottom: 74px;
 }
 
 .main-title {
@@ -110,6 +118,8 @@ body {
 
 .content-section {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 122px;
 }
 
 .content {
@@ -127,8 +137,13 @@ body {
     margin: 0 auto;
 }
 
+.subtitle {
+    padding-top: 24px;
+}
+
 .content-title {
     margin: 0;
+    padding-bottom: 12px;
 }
 
 .content-text {
@@ -145,4 +160,36 @@ body {
 
 .web-security-icon {
     background-image: url("img/icon3.png");
+}
+
+
+/* Contact Us */
+
+.footer-title {
+    margin: 0;
+}
+
+.footer-subtitle {
+    margin: 0;
+}
+
+.contact-us-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-text-flex {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-text {
+    width: 455px;
+    height: 50px;
+}
+
+.input-textarea {
+    width: 455px;
+    height: 210px;
 }
