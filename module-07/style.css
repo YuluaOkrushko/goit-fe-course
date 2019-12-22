@@ -1,195 +1,246 @@
-@font-face {
-    font-family: 'Roboto Slab';
-    font-style: normal;
-    font-weight: 400;
-    src: url('fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Droid Serif Italic';
-    font-style: italic;
-    font-weight: 400;
-    src: url('fonts/Droid\ Serif\ Italic\ V1.woff2') format('woff2'), url('fonts/Droid\ Serif\ Italic\ V1.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'MontserratRegular';
-    font-style: normal;
-    font-weight: 700;
-    src: url('fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('fonts/montserrat-v14-latin-700.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'MontserratBold';
-    font-style: normal;
-    font-weight: 700;
-    src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-}
-
-.wrapper {
-    width: 940px;
-    margin: 0 auto;
-}
-
-
-/* header */
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 98px;
-}
-
-.logo {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 26px;
-    outline: none;
-    text-decoration: none;
-    color: #323232;
-    transition: color linear 200ms;
-}
-
-.logo:hover {
-    color: #fed136;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    min-width: 480px;
-    justify-content: space-between;
-}
-
-.menu-list {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 14px;
-    outline: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #323232;
-    transition: color linear 200ms;
-}
-
-.menu-list:hover {
-    color: #fed136;
-}
-
-
-/* Services */
-
-.title {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-bottom: 74px;
-}
-
-.main-title {
-    margin: 0;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 40px;
-    text-transform: uppercase;
-    color: #323232;
-}
-
-.title-item {
-    margin: 0;
-    font-family: 'Droid Serif Italic';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 16px;
-    color: #777777;
-}
-
-.content-section {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 122px;
-}
-
-.content {
-    width: 33%;
-    text-align: center;
-}
-
-.content-image {
-    width: 75px;
-    height: 75px;
-    border: 3px solid #fed136;
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-}
-
-.subtitle {
-    padding-top: 24px;
-}
-
-.content-title {
-    margin: 0;
-    padding-bottom: 12px;
-}
-
-.content-text {
-    margin: 0;
-}
-
-.ecommerce-icon {
-    background-image: url("img/icon1.png");
-}
-
-.responsive-web-icon {
-    background-image: url("img/icon2.png");
-}
-
-.web-security-icon {
-    background-image: url("img/icon3.png");
-}
-
-
-/* Contact Us */
-
-.footer-title {
-    margin: 0;
-}
-
-.footer-subtitle {
-    margin: 0;
-}
-
-.contact-us-form {
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-text-flex {
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-}
-
-.input-text {
-    width: 455px;
-    height: 50px;
-}
-
-.input-textarea {
-    width: 455px;
-    height: 210px;
-}
+    @font-face {
+        font-family: 'Roboto Slab';
+        font-style: normal;
+        font-weight: 400;
+        src: url('fonts/roboto-slab-v10-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'Droid Serif Italic';
+        font-style: italic;
+        font-weight: 400;
+        src: url('fonts/Droid\ Serif\ Italic\ V1.woff2') format('woff2'), url('fonts/Droid\ Serif\ Italic\ V1.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'MontserratRegular';
+        font-style: normal;
+        font-weight: 700;
+        src: url('fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('fonts/montserrat-v14-latin-700.woff') format('woff');
+    }
+    
+    @font-face {
+        font-family: 'MontserratBold';
+        font-style: normal;
+        font-weight: 700;
+        src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .wrapper {
+        width: 940px;
+        margin: 0 auto;
+    }
+    /* header */
+    
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 98px;
+    }
+    
+    .logo {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 26px;
+        outline: none;
+        text-decoration: none;
+        color: #323232;
+        transition: color linear 200ms;
+    }
+    
+    .logo:hover {
+        color: #fed136;
+    }
+    
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        min-width: 480px;
+        justify-content: space-between;
+    }
+    
+    .menu-list {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        outline: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #323232;
+        transition: color linear 200ms;
+    }
+    
+    .menu-list:hover {
+        color: #fed136;
+    }
+    /* Services */
+    
+    .title {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .main-title {
+        margin: 0;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #323232;
+    }
+    
+    .title-item {
+        margin: 0;
+        font-family: 'Droid Serif Italic';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        color: #777777;
+    }
+    
+    .content-section {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 116px;
+        padding-top: 76px;
+    }
+    
+    .content {
+        width: 33%;
+        text-align: center;
+    }
+    
+    .content-image {
+        width: 75px;
+        height: 75px;
+        border: 3px solid #fed136;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+    }
+    
+    .subtitle {
+        padding-top: 24px;
+    }
+    
+    .content-title {
+        padding-bottom: 12px;
+        margin: 0;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 18px;
+        color: #222222;
+    }
+    
+    .content-text {
+        margin: 0;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 14px;
+        color: #777777;
+    }
+    
+    .ecommerce-icon {
+        background-image: url("img/icon1.png");
+    }
+    
+    .responsive-web-icon {
+        background-image: url("img/icon2.png");
+    }
+    
+    .web-security-icon {
+        background-image: url("img/icon3.png");
+    }
+    /* Contact Us */
+    
+    .contact-us-title {
+        padding: 98px 0 72px 0;
+    }
+    
+    .footer-container {
+        text-align: center;
+        background-color: #000000;
+        background-image: url(img/Map\ Image.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-x: right;
+    }
+    
+    .footer-title {
+        color: #ffffff;
+    }
+    
+    .contact-us-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .input-text-flex {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .input-text {
+        padding-left: 20px;
+        width: 455px;
+        height: 50px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 3px;
+        border: 1px solid transparent;
+    }
+    
+    .input-text::placeholder {
+        color: #bbbbbb;
+        text-transform: uppercase;
+    }
+    
+    .input-text[required]:invalid {
+        outline: 1px solid #ff002a;
+    }
+    
+    .input-text[required]:valid {
+        outline: 1px solid #5ed219;
+    }
+    
+    .input-textarea {
+        width: 455px;
+        height: 210px;
+        padding-top: 20px;
+        border-radius: 3px;
+        border: none;
+    }
+    
+    .input-submit {
+        padding: 0;
+        margin: 30px auto 112px;
+        width: 240px;
+        height: 65px;
+        background-color: #fed136;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
