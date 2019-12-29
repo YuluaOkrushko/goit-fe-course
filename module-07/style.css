@@ -121,6 +121,7 @@
     .content {
         width: 33%;
         text-align: center;
+        margin-right: 32px;
     }
     
     .content-image {
@@ -135,6 +136,10 @@
     
     .subtitle {
         padding-top: 24px;
+    }
+    
+    .content:last-child {
+        margin-right: 0;
     }
     
     .content-title {
@@ -205,6 +210,7 @@
         font-size: 14px;
         border-radius: 3px;
         border: 1px solid transparent;
+        outline: none;
     }
     
     .input-text::placeholder {
@@ -212,12 +218,14 @@
         text-transform: uppercase;
     }
     
-    .input-text[required]:invalid {
-        outline: 1px solid #ff002a;
+    .input-text[required]:focus:invalid {
+        border: 1px solid #ff002a;
+        border-radius: 3px;
     }
     
-    .input-text[required]:valid {
-        outline: 1px solid #5ed219;
+    .input-text[required]:focus:valid {
+        border: 1px solid #5ed219;
+        border-radius: 3px;
     }
     
     .input-textarea {
