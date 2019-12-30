@@ -13,17 +13,17 @@
     }
     
     @font-face {
-        font-family: 'MontserratRegular';
+        font-family: 'Calligraffitti';
         font-style: normal;
-        font-weight: 700;
-        src: url('fonts/montserrat-v14-latin-700.woff2') format('woff2'), url('fonts/montserrat-v14-latin-700.woff') format('woff');
+        font-weight: 400;
+        src: url('fonts/calligraffitti-v11-latin-regular.woff2') format('woff2'), url('fonts/calligraffitti-v11-latin-regular.woff') format('woff');
     }
     
     @font-face {
-        font-family: 'MontserratBold';
+        font-family: 'Source Sans Pro';
         font-style: normal;
-        font-weight: 700;
-        src: url('fonts/montserrat-v14-latin-regular.woff2') format('woff2'), url('fonts/roboto-slab-v10-latin-regular.woff') format('woff');
+        font-weight: 400;
+        src: url('fonts/source-sans-pro-v13-latin-regular.woff2') format('woff2'), url('fonts/source-sans-pro-v13-latin-regular.woff') format('woff');
     }
     
     *,
@@ -51,8 +51,8 @@
     }
     
     .logo {
-        font-family: 'Montserrat';
-        font-weight: 400;
+        font-family: 'Calligraffitti';
+        font-weight: 700;
         font-size: 26px;
         outline: none;
         text-decoration: none;
@@ -65,6 +65,8 @@
     }
     
     .nav-menu {
+        margin: 0;
+        padding: 0;
         display: flex;
         list-style: none;
         min-width: 480px;
@@ -72,8 +74,8 @@
     }
     
     .menu-list {
-        font-family: 'Montserrat';
-        font-weight: 400;
+        font-family: 'Source Sans Pro';
+        font-weight: 700;
         font-size: 14px;
         outline: none;
         text-decoration: none;
@@ -95,7 +97,7 @@
     
     .main-title {
         margin: 0;
-        font-family: 'Montserrat';
+        font-family: 'Source Sans Pro';
         font-weight: 700;
         font-size: 40px;
         text-transform: uppercase;
@@ -109,6 +111,7 @@
         font-weight: 400;
         font-size: 16px;
         color: #777777;
+        padding-bottom: 70px;
     }
     
     .content-section {
@@ -122,16 +125,52 @@
         width: 33%;
         text-align: center;
         margin-right: 32px;
+        position: relative;
     }
     
-    .content-image {
+    .ecommerce-icon::before {
+        content: '';
+        position: absolute;
+        background-image: url(img/icon1.png);
         width: 75px;
         height: 75px;
         border: 3px solid #fed136;
         border-radius: 50%;
         background-repeat: no-repeat;
         background-position: center;
-        margin: 0 auto;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .responsive-web-icon::before {
+        content: '';
+        position: absolute;
+        background-image: url(img/icon2.png);
+        width: 75px;
+        height: 75px;
+        border: 3px solid #fed136;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .web-security-icon::before {
+        content: '';
+        position: absolute;
+        background-image: url(img/icon3.png);
+        width: 75px;
+        height: 75px;
+        border: 3px solid #fed136;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%, -50%);
     }
     
     .subtitle {
@@ -145,7 +184,7 @@
     .content-title {
         padding-bottom: 12px;
         margin: 0;
-        font-family: 'Montserrat';
+        font-family: 'Source Sans Pro';
         font-weight: 700;
         font-size: 18px;
         color: #222222;
@@ -157,18 +196,6 @@
         font-weight: 400;
         font-size: 14px;
         color: #777777;
-    }
-    
-    .ecommerce-icon {
-        background-image: url("img/icon1.png");
-    }
-    
-    .responsive-web-icon {
-        background-image: url("img/icon2.png");
-    }
-    
-    .web-security-icon {
-        background-image: url("img/icon3.png");
     }
     /* Contact Us */
     
@@ -183,6 +210,7 @@
         background-repeat: no-repeat;
         background-position: bottom;
         background-position-x: right;
+        padding-bottom: 112px;
     }
     
     .footer-title {
@@ -205,7 +233,7 @@
         padding-left: 20px;
         width: 455px;
         height: 50px;
-        font-family: 'Montserrat';
+        font-family: 'Source Sans Pro';
         font-weight: 700;
         font-size: 14px;
         border-radius: 3px;
@@ -238,17 +266,22 @@
     
     .input-submit {
         padding: 0;
-        margin: 30px auto 112px;
+        margin: 30px auto 0;
         width: 240px;
         height: 65px;
         background-color: #fed136;
         outline: none;
         border: none;
         border-radius: 3px;
-        font-family: 'Montserrat';
+        font-family: 'Source Sans Pro';
         font-weight: 700;
         font-size: 18px;
         color: #ffffff;
         text-transform: uppercase;
         cursor: pointer;
+        transition: background-color linear 200ms;
+    }
+    
+    .input-submit:hover {
+        background-color: #d6b544;
     }
