@@ -1,0 +1,210 @@
+body,
+button {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.header-background {
+    text-align: center;
+    background-image: url(img/background_img_1.png);
+    background-position: center;
+    height: 530px;
+}
+
+.logo {
+    font-size: 20px;
+    transition: color linear 200ms;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #f15656;
+    text-decoration: none;
+}
+
+.authorization-menu {
+    padding-top: 20px;
+    margin-bottom: 122px;
+}
+
+.authorization-link {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+    padding: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50px;
+}
+
+.authorization-link:hover,
+.authorization-link:focus {
+    border-color: #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-nav {
+    margin-bottom: 26px;
+}
+
+.header-title {
+    margin-bottom: 18px;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-item {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 30px 0 30px;
+    text-transform: none;
+}
+
+.btn {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #ff4e50;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: background-color linear 200ms;
+    padding: 0;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #ffa507;
+    outline: none;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.main-container {
+    padding: 74px 15px 40px 15px;
+}
+
+.section-title h2 {
+    font-size: 22px;
+    color: #333333;
+    margin: 0;
+}
+
+.section-title {
+    margin-bottom: 10px;
+}
+
+.partner-item {
+    padding: 0 32px;
+    margin-bottom: 24px;
+}
+
+.partner-name {
+    margin: 16px 0 12px 0;
+}
+
+.partner-description {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.partner-img {
+    border-radius: 50%;
+    position: relative;
+    width: 121px;
+    height: 121px;
+    margin: 0 auto;
+}
+
+.partner-img::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-tv::after {
+    background-image: url(img/icon1.png);
+}
+
+.icon-chemical::after {
+    background-image: url(img/icon2.png);
+}
+
+.icon-coffee::after {
+    background-image: url(img/icon3.png);
+}
+
+.icon-telegram::after {
+    background-image: url(img/icon4.png);
+}
+
+.btn-to-see {
+    border: 2px solid #ff4e50;
+    background-color: #fff;
+    color: #ff4e50;
+    transition: linear 200ms;
+}
+
+.btn-to-see:hover,
+.btn-to-see:focus {
+    background: #ffffff;
+    color: #ffa507;
+    border-color: #ffa507;
+}
+
+@media (min-width:768px) {
+    .authorization-menu {
+        order: 2;
+    }
+    .header-background {
+        height: 700px;
+    }
+    .section-title {
+        margin-bottom: 22px;
+    }
+    .btn {
+        width: auto;
+        padding: 0 20px;
+    }
+    .partner-item {
+        margin-bottom: 20px;
+    }
+    .col-md-2 {
+        order: 2;
+    }
+    .main-title {
+        font-size: 52px;
+    }
+    .heather-order {
+        order: 2;
+    }
+    .lucas-order {
+        order: 3;
+    }
+    .telegram-order {
+        order: 4;
+    }
+}
