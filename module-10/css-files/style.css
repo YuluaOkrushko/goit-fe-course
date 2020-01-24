@@ -1,8 +1,10 @@
 .header {
     padding-bottom: 226px;
-    background-image: url(/img/background-img.png);
     padding-top: 20px;
     text-align: center;
+    background-image: url(/img/background-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-wrapper {
@@ -115,8 +117,8 @@
 
 .btn:hover,
 .btn:focus {
-    color: #f38181;
-    border-color: #f38181;
+    color: #fce38a;
+    border-color: #fce38a;
 }
 
 
@@ -162,11 +164,16 @@
 /* service-article */
 
 .content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .content-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 33%;
     padding-bottom: 98px;
@@ -175,6 +182,8 @@
 }
 
 .content-section__list::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     content: '';
     height: 32px;
