@@ -1,0 +1,238 @@
+.header {
+    padding-bottom: 226px;
+    background-image: url(/img/background-img.png);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.header-wrapper {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 160px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    outline: none;
+    -webkit-transition: color linear 200ms;
+    -o-transition: color linear 200ms;
+    transition: color linear 200ms;
+}
+
+.logo:hover,
+.logo:focus {
+    color: #fce38a;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 494px;
+}
+
+.nav__menu-link {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    -webkit-transition: linear 200ms;
+    -o-transition: linear 200ms;
+    transition: linear 200ms;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0px;
+}
+
+.nav__menu-link:hover,
+.nav__menu-link:focus {
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+    padding-bottom: 6px;
+}
+
+.header-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 150px;
+    color: #ffffff;
+    text-align: center;
+    width: 1200px;
+    padding-bottom: 94px;
+}
+
+.header-title__item {
+    font-family: Kaushan Script;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.btn {
+    padding: 0;
+    width: 160px;
+    height: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: linear 200ms;
+    -o-transition: linear 200ms;
+    transition: linear 200ms;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #f38181;
+    border-color: #f38181;
+}
+
+
+/* service */
+
+.title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-title__item {
+    font-weight: 400;
+    margin: 0;
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    padding-bottom: 8px;
+    text-transform: none;
+    display: block;
+}
+
+.main-title {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.main-title::after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    background-color: #f38181;
+    margin: 0 auto;
+    display: block;
+    margin-top: 34px;
+}
+
+
+/* service-article */
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-section__list {
+    display: flex;
+    width: 33%;
+    padding-bottom: 98px;
+    text-align: left;
+    position: relative;
+}
+
+.content-section__list::before {
+    display: flex;
+    content: '';
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 92px;
+}
+
+.photography::before {
+    background-image: url("img/img1.png");
+}
+
+.web-design::before {
+    background-image: url('img/img2.png');
+}
+
+.creativity::before {
+    background-image: url('img/img3.png');
+}
+
+.seo::before {
+    background-image: url('img/img4.png');
+}
+
+.css-html::before {
+    background-image: url('img/img5.png');
+}
+
+.digital::before {
+    background-image: url('img/img6.png');
+}
+
+.content-section__list:nth-last-child(-n+4) {
+    padding-bottom: 86px;
+}
+
+.content-image {
+    width: auto;
+    height: 32px;
+    padding: 0 30px;
+}
+
+.content-title {
+    margin: 0 0 12px 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.content-text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+}
