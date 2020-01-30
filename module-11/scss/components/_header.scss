@@ -1,0 +1,119 @@
+/* header */
+
+.header {
+    padding-bottom: 226px;
+    padding-top: 20px;
+    text-align: center;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 46px;
+}
+
+.header__wrapper {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding-bottom: 160px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    text-decoration: none;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 30px;
+    color: $white;
+    outline: none;
+    transition: color linear 200ms;
+    &:hover,
+    &:focus {
+        color: $links-hover-color;
+    }
+}
+
+.header__navigation--list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    min-width: 494px;
+}
+
+.header__navigation--item {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    outline: none;
+    color: $white;
+    transition: linear 200ms;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0px;
+    &:hover,
+    &:focus {
+        color: $links-hover-color;
+        border-bottom: 3px solid $links-hover-color;
+        padding-bottom: 6px;
+    }
+}
+
+.header__navigation--icon {
+    width: 18px;
+    height: 18px;
+    fill: $white;
+    &:hover,
+    &:focus {
+        fill: $links-hover-color;
+    }
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 150px;
+    color: $white;
+    text-align: center;
+    width: 1200px;
+    padding-bottom: 94px;
+}
+
+.header__title--item {
+    font-family: $font-title;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+.header__button {
+    padding: 0;
+    width: 160px;
+    height: 40px;
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: transparent;
+    border: 3px solid $white;
+    outline: none;
+    cursor: pointer;
+    transition: linear 200ms;
+    &:hover,
+    &:focus {
+        color: $links-hover-color;
+        border-color: $links-hover-color;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .header {
+        background-image: url('../img/background@2x.png');
+    }
+}
